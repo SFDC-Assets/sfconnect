@@ -1,6 +1,6 @@
 # Salesforce Connect
 
-This project shows how to use Salesforce Connect (External Objects) to integrate data into Salesforce without importing it. 
+This project shows how to use Salesforce Connect to integrate data into Salesforce without importing it. 
 
 You can find this demo on <https://www.platformdemos.com>, where you can:
 
