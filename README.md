@@ -2,7 +2,7 @@
 
 This project shows how to use Salesforce Connect to integrate data into Salesforce without importing it. 
 
-You can find this demo on <https://www.platformdemos.com>, where you can:
+You can find this demo on <https://www.platformdemos.com>, where you can also:
 
 - Watch a video of this demo (3 minutes or less).
 - Spin up your own instance of the demo in a free scratch org.
@@ -15,7 +15,7 @@ ___
 
 The easiest way to try this demo is on <https://www.platformdemos.com>, but if you would rather clone this project for yourself, follow the instructions below.
 
-1. Setup your own [Heroku External Objects demo](https://github.com/gabesumner/heroku-external-objects) to get your own clone of the oData demo data.
+1. Create a clone of the oData demo data by setting up the [Heroku External Objects demo](https://github.com/gabesumner/heroku-external-objects).
 
 2. [Create your own Dev Hub and setup SFDX](https://trailhead.salesforce.com/en/content/learn/modules/sfdx_app_dev/sfdx_app_dev_setup_dx).
 
@@ -26,7 +26,7 @@ git clone https://github.com/gabesumner/salesforce-connect
 cd salesforce-connect
 ```
 
-4. Edit the following file: ./force-app/main/default/dataSources/ExternalData.dataSource-meta.xml
+4. Edit the following file: **./force-app/main/default/dataSources/ExternalData.dataSource-meta.xml**
 
 5. Replace the URL, Username, and Password with your own oData demo source from step #1.
 
