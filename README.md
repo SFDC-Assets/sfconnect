@@ -1,6 +1,8 @@
 # Salesforce Connect
 
-This project shows how to show to use Salesforce Connect (External Objects) to integrate data into Salesforce without importing it. This demo, along with many other Salesforce Platform demos, are available at <https://www.platformdemos.com>, where you can:
+This project shows how to use Salesforce Connect (External Objects) to integrate data into Salesforce without importing it. 
+
+You can find this demo on <https://www.platformdemos.com>, where you can:
 
 - Watch a video of this demo (3 minutes or less).
 - Spin up your own instance of the demo in a free scratch org.
@@ -11,7 +13,7 @@ ___
 
 ## Installation Instructions
 
-The easiest way to get hands on with this demo is through <https://www.platformdemos.com>, but if you would rather clone this project for yourself, then follow the instructions below to get it up and running.
+The easiest way to try this demo is on <https://www.platformdemos.com>, but if you would rather clone this project for yourself, follow the instructions below.
 
 1. Setup your own [Heroku External Objects demo](https://github.com/gabesumner/heroku-external-objects) to get your own clone of the oData demo data.
 
