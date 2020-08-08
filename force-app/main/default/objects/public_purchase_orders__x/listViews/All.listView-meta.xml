@@ -3,6 +3,7 @@
     <fullName>All</fullName>
     <columns>id__c</columns>
     <columns>supplierid__c</columns>
+    <columns>contact__c</columns>
     <columns>status__c</columns>
     <columns>netsum__c</columns>
     <columns>tax__c</columns>

@@ -1,12 +1,9 @@
 # Create the demo org
-# sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --userprefix admin -o sfconnect.demo
 sfdx force:org:delete -u salesforce-connect
 sfdx force:org:create -f config/project-scratch-def.json --setalias salesforce-connect --setdefaultusername
 
-# export HEROKU_API_KEY=$(heroku auth:token)
-
-sfdx shane:heroku:repo:deploy -g gabesumner -r heroku-external-objects -n `basename "${PWD/gabesumner-/}"`
-sfdx shane:heroku:externalobjects -a external-objects-demo -f force-app/main/default/dataSources/ExternalData.dataSource-meta.xml 
+#export HEROKU_API_KEY=$(heroku auth:token)
+#sfdx shane:heroku:externalobjects -a external-objects-demo -f force-app/main/default/dataSources/ExternalData.dataSource-meta.xml 
 
 # Push the metadata into the new scratch org.
 sfdx force:source:push

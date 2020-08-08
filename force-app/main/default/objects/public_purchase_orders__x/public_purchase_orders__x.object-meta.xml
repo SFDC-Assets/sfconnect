@@ -100,16 +100,22 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Purchase_Order_External_Record_Page</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Purchase_Order_External_Record_Page</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -124,6 +130,9 @@
     <label>Purchase Order (External)</label>
     <pluralLabel>Purchase Orders (External)</pluralLabel>
     <searchLayouts>
+        <customTabListAdditionalFields>id__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>id__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>id__c</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>id__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>supplierid__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>status__c</searchResultsAdditionalFields>
