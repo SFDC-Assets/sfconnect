@@ -1,7 +1,5 @@
 # Create the demo org
-# sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --userprefix admin -o sfconnect.demo
-sfdx force:org:delete -u salesforce-connect
-sfdx force:org:create -f config/project-scratch-def.json --setalias salesforce-connect --setdefaultusername
+sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --userprefix admin -o sfconnect.demo
 
 # export HEROKU_API_KEY=$(heroku auth:token)
 

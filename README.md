@@ -13,11 +13,11 @@ ___
 
 ## Installation Instructions
 
-The easiest way to try this demo is on <https://www.platformdemos.com>, but if you would rather clone this project for yourself, follow the instructions below.
+The easiest way to try this demo is on <https://www.platformdemos.com> (THIS DOES NOT YET WORK), but if you would rather clone this project for yourself, follow the instructions below.
 
-1. Create a clone of the oData demo data by setting up the [Heroku External Objects demo](https://github.com/gabesumner/heroku-external-objects).
+1. [Create your own Dev Hub and setup SFDX](https://trailhead.salesforce.com/en/content/learn/modules/sfdx_app_dev/sfdx_app_dev_setup_dx).
 
-2. [Create your own Dev Hub and setup SFDX](https://trailhead.salesforce.com/en/content/learn/modules/sfdx_app_dev/sfdx_app_dev_setup_dx).
+2. [Sign up for your own Heroku account](https://signup.heroku.com/), if you don't already have one.
 
 3. Clone this repository:
 
@@ -26,33 +26,16 @@ git clone https://github.com/gabesumner/salesforce-connect
 cd salesforce-connect
 ```
 
-4. Edit the following file: **./force-app/main/default/dataSources/ExternalData.dataSource-meta.xml**
-
-5. Replace the URL, Username, and Password with your own oData demo source from step #1.
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<ExternalDataSource xmlns="http://soap.sforce.com/2006/04/metadata">
-    <customConfiguration>{&quot;inlineCountEnabled&quot;:&quot;true&quot;,&quot;csrfTokenName&quot;:&quot;&quot;,&quot;requestCompression&quot;:&quot;false&quot;,&quot;pagination&quot;:&quot;CLIENT&quot;,&quot;noIdMapping&quot;:&quot;false&quot;,&quot;format&quot;:&quot;JSON&quot;,&quot;compatibility&quot;:&quot;DEFAULT&quot;,&quot;csrfTokenEnabled&quot;:&quot;false&quot;,&quot;timeout&quot;:&quot;120&quot;,&quot;searchEnabled&quot;:&quot;true&quot;,&quot;ChangeTrackingEnabled&quot;:&quot;false&quot;}</customConfiguration>
-    <endpoint>https://odata-2-virginia.heroku.com/odata/v4/48cce0436f904e3db46e28df069c620d/</endpoint>
-    <isWritable>true</isWritable>
-    <label>ExternalData</label>
-    <principalType>NamedUser</principalType>
-    <protocol>Password</protocol>
-    <type>OData4</type>
-    <username>849dcebcbc534677cfe6024c6c001df4</username>
-    <password>z3c0q7e4895146y19003f440b67e2c94</password>
-</ExternalDataSource>
-```
-
-6. Install **shane-sfdx-plugins** (if you don't already have it)
+4. Install **shane-sfdx-plugins** (if you don't already have it)
 
 ```
 sfdx plugins:install shane-sfdx-plugins
 ```
 
-7. Run the startup script
+5. Run the startup script and answer the 
 
 ```
-sh orgInit.sh
+sh orgInitLocal.sh
 ```
+
+6. Due to a bug, find the Heroku app that was created, click **Heroku Connect**, then click **External Objects**, and share all the **Data Sources**.
