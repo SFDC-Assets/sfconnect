@@ -1,5 +1,3 @@
-# This demo requires a Heroku app based on: 
-
 # Make sure we're logged into Heroku
 if [[ -z "$(heroku auth:whoami)" ]]; then
     echo 'Login to Heroku'
