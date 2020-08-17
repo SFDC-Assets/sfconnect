@@ -41,7 +41,7 @@ echo 'Creating the new demo scratch org.'
 sfdx force:org:create -f config/project-scratch-def.json --setalias salesforce-connect --setdefaultusername
 
 echo 'Updating the external data source to point to the new Heroku app.'
-sfdx shane:heroku:externalobjects -a $HEROKU_APP_NAME -b -f force-app/main/default/dataSources/ExternalData.dataSource-meta.xml 
+sfdx shane:heroku:externalobjects -a $HEROKU_APP_NAME -f force-app/main/default/dataSources/ExternalData.dataSource-meta.xml 
 
 echo 'Pushing the metadata into the new scratch org.'
 sfdx force:source:push
