@@ -32,7 +32,7 @@ echo 'Trying to delete existing Heroku app (if it exists).'
 heroku apps:destroy $HEROKU_APP_NAME -c=$HEROKU_APP_NAME
 
 echo 'Creating the Heroku app which will provide the oData API used by this demo.'
-sfdx shane:heroku:repo:deploy -g gabesumner -r heroku-external-objects -n $HEROKU_APP_NAME --loglevel=debug
+sfdx shane:heroku:repo:deploy -g gabesumner -r external-objects -n $HEROKU_APP_NAME --loglevel=debug
 
 echo 'Deleting the existing Salesforce demo org (if it exists)'
 sfdx force:org:delete -u salesforce-connect
