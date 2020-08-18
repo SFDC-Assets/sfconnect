@@ -38,4 +38,4 @@ sfdx plugins:install shane-sfdx-plugins
 sh orgInitLocal.sh
 ```
 
-6. Due to a bug, find the Heroku app that was created, click **Heroku Connect**, then click **External Objects**, and share all the **Data Sources**.
+Supply answers to the prompts. Your demo org and Heroku app should be created.
