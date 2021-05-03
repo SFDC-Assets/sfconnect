@@ -3,14 +3,23 @@ sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --us
 
 export DEPLOY_NAME=sf-connect-${RANDOM}
 export DEPLOY_NAME_RAND=sf-connect-${$RANDOM}
+DEPLOY_NAME_TWO=sf-connect-${RANDOM}
+DEPLOY_NAME_THREE=sf-connect-${RANDOM}
 
-echo $DEPLOY_NAME
-echo $DEPLOY_NAME_RAND
+DEPLOY_NAME_FOUR='sf-connect-' + $RANDOM
 
-echo `Setting deployed app name to  "${DEPLOY_NAME}"`
+echo $DEPLOY_NAME + ' DEPLOY_NAME'
+echo $DEPLOY_NAME_RAND + ' DEPLOY_NAME_RAND'
+
+echo $DEPLOY_NAME_TWO + ' DEPLOY_NAME_TWO'
+echo $DEPLOY_NAME_THREE + ' DEPLOY_NAME_THREE'
+echo $DEPLOY_NAME_FOUR + ' DEPLOY_NAME_FOUR'
+
+
+echo `Setting deployed app name to  "${DEPLOY_NAME_FOUR}"`
 
 echo 'Creating the Heroku app which will provide the oData API used by this demo.'
-sfdx shane:heroku:repo:deploy -g gabesumner -r external-objects -n `"${DEPLOY_NAME}"`
+sfdx shane:heroku:repo:deploy -g gabesumner -r external-objects -n `"${DEPLOY_NAME_FOUR}"`
 sfdx shane:heroku:repo:deploy -g gabesumner -r external-objects -n ${$DEPLOY_NAME}
 sfdx shane:heroku:repo:deploy -g gabesumner -r external-objects -n ${DEPLOY_NAME}
 
