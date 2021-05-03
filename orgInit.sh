@@ -6,7 +6,7 @@ export DEPLOY_NAME_RAND=sf-connect-${$RANDOM}
 DEPLOY_NAME_TWO=sf-connect-${RANDOM}
 DEPLOY_NAME_THREE=sf-connect-${RANDOM}
 
-DEPLOY_NAME_FOUR='sf-connect-' + $RANDOM
+export DEPLOY_NAME_FOUR='sf-connect-' + $RANDOM
 
 echo $DEPLOY_NAME + ' DEPLOY_NAME'
 echo $DEPLOY_NAME_RAND + ' DEPLOY_NAME_RAND'
