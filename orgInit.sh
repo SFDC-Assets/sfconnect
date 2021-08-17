@@ -6,6 +6,8 @@ echo 'Creating the Heroku app which will provide the oData API used by this demo
 
 # echo 'Updating the external data source to point to the new Heroku app.'
 # sfdx shane:heroku:externalobjects -a `basename "${PWD/gabesumner-/}"` -f force-app/main/default/dataSources/ExternalData.dataSource-meta.xml 
+
+
 # echo 'App will be named: ' + basename "${PWD%????????}"
 # sfdx shane:heroku:repo:deploy -g gabesumner -r external-objects -n `basename "${PWD%????????}"`
 
