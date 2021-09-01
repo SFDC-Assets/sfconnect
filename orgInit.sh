@@ -1,5 +1,5 @@
 echo 'Creating the new demo scratch org.'
-sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --userprefix admin -o sfconnect.demo
+sfdx shane:org:create -f config/project-scratch-def.json -d 3 -s --wait 60 --userprefix admin -o sfconnect.demo
 
 echo 'Creating the Heroku app which will provide the oData API used by this demo.'
 # sfdx shane:heroku:repo:deploy -g gabesumner -r external-objects -n `basename "${PWD/gabesumner-/}"`
