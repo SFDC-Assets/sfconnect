@@ -1,7 +1,7 @@
 {
   "orgName": "Salesforce Connect Demo",
   "edition": "Developer",
-  "features": ["enableSetPasswordInApi"],
+  "features": ["enableSetPasswordInApi","PlatformConnect:2"],
   "settings": {
     "lightningExperienceSettings": {
         "enableS1DesktopEnabled": true
